@@ -3,7 +3,7 @@ license: MIT
 name: ship-financing-lease-transaction-review
 description: 审查船舶建造、租赁、运营、物权、处置及财务回报。
 version: 0.4.0
-author: Hermes Agent Contributor
+author: stormchaser
 platforms: [linux, macos, windows]
 metadata:
   hermes:
