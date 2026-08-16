@@ -1,14 +1,95 @@
 ---
-license: MIT
 name: ship-financing-lease-transaction-review
 description: 审查船舶建造、租赁、运营、物权、处置及财务回报。
-version: 0.4.0
+version: 0.5.0
 author: stormchaser
+license: Proprietary - internal use
 platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [financial-risk, vessel, shipping-finance, leasing, maritime]
-    related_skills: [financing-lease-contract-review, corporate-credit-due-diligence, financial-analysis-report, cross-border-financial-regulatory-research, technical-tender-due-diligence]---
+    related_skills: [financing-lease-contract-review, corporate-credit-due-diligence, financial-analysis-report, cross-border-financial-regulatory-research, technical-tender-due-diligence]
+  sources:
+    - id: MOJ-REGUL-1995
+      title: 中华人民共和国船舶登记条例 (1995)
+      type: regulation
+      url: https://zh.wikisource.org/zh-hant/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E8%88%B9%E8%88%B6%E7%99%BB%E8%AE%B0%E6%9D%A1%E4%BE%8B
+      authority: 国务院
+      grade: A
+      note: 船舶所有权、抵押权、光船租赁登记对抗效力；抵押登记顺位按申请日（第5、6、20-24条）
+    - id: MOT-REGUL-2016
+      title: 中华人民共和国船舶登记办法 (交通运输部令2016年第61号)
+      type: regulation
+      url: https://xxgk.mot.gov.cn/jigou/fgs/202006/t20200623_3307826.html
+      authority: 交通运输部
+      grade: A
+      note: 所有权/国籍/抵押权/光船租赁登记操作细则
+    - id: MOT-REGUL-2009
+      title: 建造中船舶抵押权登记暂行办法 (2009)
+      type: regulation
+      url: https://www.cn-eship.com/rule/rule.jsp
+      authority: 国家海事局
+      grade: A
+      note: 新造船预付款融资抵押登记依据
+    - id: MOT-ANN-2013-81
+      title: 交通运输部公告2013年第81号——实施融资租赁船舶运力规模管理
+      type: administrative-notice
+      url: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=48582
+      authority: 交通运输部
+      grade: A
+      note: 融资租赁船舶运力、所有权/国籍/检验证书要求
+    - id: SPC-CASE-2024
+      title: 最高人民法院发布2024年全国海事审判典型案例
+      type: case-law
+      url: https://www.ftcourt.gov.cn/swgk/ckxal/content/post_1566113.html
+      authority: 最高人民法院
+      grade: A
+      note: 融资租赁船舶船员优先权系列案 (2024)津72民初691号等102案；司法拍卖清偿顺序
+    - id: SPC-CASE-2025
+      title: 最高人民法院发布2025年全国海事审判典型案例
+      type: case-law
+      url: https://www.court.gov.cn/zixun/xiangqing/503641.html
+      authority: 最高人民法院
+      grade: A
+      note: 海事保全、仲裁裁决认可执行、租船纠纷裁判要旨
+    - id: SH-MAR-RESEARCH
+      title: 船舶融资租赁合同涉诉若干法律问题研究 (上海海事法院)
+      type: judiciary-research
+      url: https://shhsfy.gov.cn/hsfyytwx/hsfyytwx/spdy1358/dycg1505/2019/10/25/09b080ba6df6df15016e0227ea6c0098.html
+      authority: 上海海事法院
+      grade: B
+      note: 融资租赁与光船登记差异、船舶优先权、租赁物保全、执行风险
+    - id: ALLBRIGHT-ARTICLE
+      title: 新形势下船舶融资业务新趋势及租赁公司法律风险防范 (锦天城律师事务所)
+      type: legal-analysis
+      url: https://www.allbrightlaw.com/CN/10475/168a2b52a69d05b5.aspx
+      authority: 律师事务所
+      grade: C
+      note: 天津海事法院(2019)津72民初1053号、上海海事法院(2016)沪72民初1013号、大连海事法院(2015)大海保字第40号扣押案件；海事强制令(2019)琼72行保2号
+    - id: CLARKSONS-2025
+      title: 克拉克森全年总结：新造船市场——压力测试的一年 (2026-01)
+      type: industry-research
+      url: https://wap.eworldship.com/index.php/eworldship/news/article?id=217603
+      authority: Clarksons Research
+      grade: C
+      note: 2025新造船订单2036艘/56.4MCGT；价格指数高位运行
+    - id: CLARKSONS-2024
+      title: 2024年新造船市场再迎"超级周期"
+      type: industry-research
+      url: https://www.seaconcrew.com/cn/industry-news/59.html
+      authority: Clarksons Research
+      grade: C
+      note: 前三季度订单1733艘/5000万CGT/1552亿美元；新造船价格指数2021以来+45%
+    - id: CLARKSONS-2025-NOV
+      title: 克拉克森：全年新船订单超1500亿美元
+      type: industry-research
+      url: https://www.seacon.com/index.php?c=show&id=2657
+      authority: Clarksons Research
+      grade: C
+      note: 截至2025年11月新造船投资1467亿美元/1.168亿CGT；价格指数184点；中国船厂持单约61%
+evidence_grade: A-
+# A: 官方法规/司法解释/最高法案例; B: 海事法院研究/行业自律; C: 律所/券商/克拉克森研究; D: 媒体/经纪线索/公众号。本技能主体条款A级，市场数据引用C级，D级仅情景。
+---
 
 # 船舶融资租赁与交易审查
 
