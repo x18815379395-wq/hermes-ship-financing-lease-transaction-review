@@ -1,0 +1,14 @@
+{
+  "comparables": [
+    {"name": "A", "adjusted_price": 34.8, "weight": 1.0},
+    {"name": "B", "adjusted_price": 35.2, "weight": 1.0},
+    {"name": "C", "adjusted_price": 33.8, "weight": 1.0}
+  ],
+  "replacement_cost": 37.0,
+  "physical_depreciation": 5.6,
+  "functional_obsolescence": 0.8,
+  "economic_obsolescence": 1.0,
+  "reported_market_value": 34.5,
+  "reported_cost_value": 29.6,
+  "notice": "单位为百万美元；仅复现指定微信文章的示意性估值，不代表真实成交、重置成本或评估结论。"
+}

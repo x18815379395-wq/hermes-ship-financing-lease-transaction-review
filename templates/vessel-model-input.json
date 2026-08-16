@@ -1,0 +1,26 @@
+{
+  "purchase_price": 100.0,
+  "term_years": 8,
+  "days_per_year": 365,
+  "tce_per_day": [0.055,0.055,0.053,0.052,0.050,0.050,0.048,0.048],
+  "utilization": [0.96,0.96,0.95,0.95,0.94,0.94,0.93,0.93],
+  "scheduled_offhire_days": [5,5,10,5,25,5,10,5],
+  "daily_opex": [0.018,0.0185,0.019,0.0195,0.020,0.0205,0.021,0.0215],
+  "annual_management_cost": [0.8,0.8,0.82,0.82,0.85,0.85,0.88,0.88],
+  "drydock_events": [{"year":5,"cost":7.0,"extra_offhire_days":20}],
+  "environmental_capex_events": [{"year":3,"cost":2.0}],
+  "residual_value": 45.0,
+  "sale_cost_rate": 0.03,
+  "discount_rate": 0.10,
+  "debt": {"amount":60.0,"annual_rate":0.06,"tenor_years":7,"repayment":"equal_principal"},
+  "scenarios": {
+    "tce_down_20": {"tce_multiplier":0.8},
+    "tce_down_40": {"tce_multiplier":0.6},
+    "opex_up_20": {"opex_multiplier":1.2},
+    "residual_down_40": {"residual_multiplier":0.6},
+    "offhire_plus_60_days": {"extra_offhire_days":60},
+    "interest_up_200bp": {"interest_rate_add":0.02},
+    "combined_downside": {"tce_multiplier":0.6,"opex_multiplier":1.2,"residual_multiplier":0.6,"extra_offhire_days":60,"capex_multiplier":1.2,"interest_rate_add":0.02}
+  },
+  "notice": "全部数字仅为脚本演示，不代表任何船型、运价、船价或项目参数。"
+}

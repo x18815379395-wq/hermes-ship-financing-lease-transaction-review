@@ -1,0 +1,14 @@
+{
+  "holding_years": 6,
+  "annual_revenue": 500.0,
+  "annual_operating_expense_including_depreciation": 180.0,
+  "annual_depreciation": 40.0,
+  "accumulated_depreciation": 200.0,
+  "gross_sale_price": 900.0,
+  "reported_book_value_at_sale": 250.0,
+  "reported_total_profit": 2570.0,
+  "reported_roi": 5.70,
+  "reported_daily_hire": 1.5,
+  "reported_daily_opex": 0.5,
+  "notice": "金额单位为万美元；仅复现指定微信文章的历史粗估口径，不代表真实船价、TCE、OPEX、残值或项目参数。"
+}
